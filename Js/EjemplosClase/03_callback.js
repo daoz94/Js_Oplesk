@@ -18,10 +18,10 @@ console.log(resp)
 
 //otra manera de verlo
 
-//let resp = tipodAuto("deportivo", (){
-//                                   return "Auto deportivo"
-//                                  },
-//                                  function familiar(){
-//                                    return "Auto Familiar"
-//                                  })
-//console.log(resp)
+let resp2 = tipodAuto("familiar", function deportivo(){
+                                   return "Auto deportivo";
+                                  },
+                                  function familiar(){
+                                    return "Auto Familiar";
+                                  });
+console.log(resp2)

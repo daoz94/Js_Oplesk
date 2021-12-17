@@ -16,33 +16,34 @@ function barra() {
 
 function mostrarElfo(elfo) {
   let diamante = '💎';
-  console.log(`${diamante} Soy un Elfo ${elfo}`);
+  console.log(`${diamante}  Soy un Elfo ${elfo}`);
 }
 
 function mostrarDracula(dracula) {
   let diamante = '💎';
-  console.log(`${diamante} Soy un dracula ${dracula}`);
+  console.log(`${diamante}  Soy un dracula ${dracula}`);
 }
 
 function mostrarMago(mago) {
   let diamante = '💎';
-  console.log(`${diamante} Soy un Mago ${mago}`);
+  console.log(`${diamante}  Soy un Mago ${mago}`);
 }
 
 function mostrarZombie(zombie) {
   let diamante = '💎';
-  console.log(`${diamante} Soy un Zombie ${zombie}`);
+  console.log(`${diamante}  Soy un Zombie ${zombie}`);
 }
 
 function mostrarHeroe(heroe) {
   let diamante = '💎';
-  console.log(`${diamante} Soy un heroe ${heroe}`);
+  console.log(`${diamante}  Soy un heroe ${heroe}`);
 }
 
 function personajes(pers) {
   let n1=1, n2=2, n3=3, n4=4, n5=5;
+
   switch (pers) {
-    case pers == 'elfo':
+    case 'elfo':
       console.log(`
       ${check} elfo 🧝
       ${n2} dracula 🧛
@@ -51,7 +52,7 @@ function personajes(pers) {
       ${n5} heroe 🦸
       `);
       break;
-    case pers == 'dracula':
+    case 'dracula':
       console.log(`
       ${n1} elfo 🧝
       ${check} dracula 🧛
@@ -60,7 +61,7 @@ function personajes(pers) {
       ${n5} heroe 🦸
       `);
       break;
-    case pers == 'mago':
+    case 'mago':
       console.log(`
       ${n1} elfo 🧝
       ${n2} dracula 🧛
@@ -69,7 +70,7 @@ function personajes(pers) {
       ${n5} heroe 🦸
       `);
       break;
-    case pers == 'zombie':
+    case 'zombie':
       console.log(`
       ${n1} elfo 🧝
       ${n2} dracula 🧛
@@ -78,7 +79,7 @@ function personajes(pers) {
       ${n5} heroe 🦸
       `);
       break;
-    case pers == 'heroe':
+    case 'heroe':
       console.log(`
       ${n1} elfo 🧝
       ${n2} dracula 🧛
@@ -110,9 +111,8 @@ function mostrarPersonaje(personaje) {
   }
 }
 
-
 let pers = "mago"
 barraInicio();
-mostrarPersonaje(pers);
-personajes(pers);
+//mostrarPersonaje(pers);
+//personajes(pers);
 barraInicio();

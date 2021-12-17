@@ -7,7 +7,7 @@ let heroe = '🦸';
 let check = '✅';
 
 function barraInicio() {
-  console.log(`${star} ${'='.repeat(50)} ${star}`);
+  console.log(`${star}  ${'='.repeat(50)}   ${star}`);
 }
 
 function barra() {
@@ -39,15 +39,55 @@ function mostrarHeroe(heroe) {
   console.log(`${diamante} Soy un heroe ${heroe}`);
 }
 
-function personajes(v) {
-  console.log(`
-  ${n1} elfo 🧝;
-  ${n2} dracula 🧛;
-  ${n3} mago 🧙‍♂️;
-  ${n4} zombie 🧟;
-  ${n5} heroe 🦸;
-
-  `);
+function personajes(pers) {
+  let n1=1, n2=2, n3=3, n4=4, n5=5;
+  switch (pers) {
+    case pers == 'elfo':
+      console.log(`
+      ${check} elfo 🧝
+      ${n2} dracula 🧛
+      ${n3} mago 🧙‍♂️
+      ${n4} zombie 🧟
+      ${n5} heroe 🦸
+      `);
+      break;
+    case pers == 'dracula':
+      console.log(`
+      ${n1} elfo 🧝
+      ${check} dracula 🧛
+      ${n3} mago 🧙‍♂️
+      ${n4} zombie 🧟
+      ${n5} heroe 🦸
+      `);
+      break;
+    case pers == 'mago':
+      console.log(`
+      ${n1} elfo 🧝
+      ${n2} dracula 🧛
+      ${check} mago 🧙‍♂️
+      ${n4} zombie 🧟
+      ${n5} heroe 🦸
+      `);
+      break;
+    case pers == 'zombie':
+      console.log(`
+      ${n1} elfo 🧝
+      ${n2} dracula 🧛
+      ${n3} mago 🧙‍♂️
+      ${check} zombie 🧟
+      ${n5} heroe 🦸
+      `);
+      break;
+    case pers == 'heroe':
+      console.log(`
+      ${n1} elfo 🧝
+      ${n2} dracula 🧛
+      ${n3} mago 🧙‍♂️
+      ${n4} zombie 🧟
+      ${check} heroe 🦸
+      `);
+      break;
+  }
 }
 
 function mostrarPersonaje(personaje) {
@@ -70,7 +110,9 @@ function mostrarPersonaje(personaje) {
   }
 }
 
+
+let pers = "mago"
 barraInicio();
-mostrarPersonaje('mago');
-personajes(v);
+mostrarPersonaje(pers);
+personajes(pers);
 barraInicio();

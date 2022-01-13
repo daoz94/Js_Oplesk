@@ -86,4 +86,6 @@ for (let fila = 0; fila < map.length; fila++) {
     }
 }
 
-console.log(map)
+for (let index = 0; index < map.length; index++) {
+    log(map[index][0], map[index][1],map[index][2],map[index][3],map[index][4],map[index][5])
+}
